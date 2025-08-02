@@ -154,6 +154,23 @@
     justify-content: center;
   }
 }
+.project-tech-icons {
+  display: flex;
+  gap: 12px;          /* espacio entre iconos */
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.project-tech-icons img {
+  width: 32px;        /* tamaño pequeño */
+  height: 32px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+  cursor: default;
+}
+
+.project-tech-icons img:hover {
+}
 
 
 </style>
@@ -171,7 +188,12 @@
           <p class="project-desc">
             Proyecto de conversión de una plantilla WordPress a un diseño responsive personalizado con Bootstrap. Se replicó la estructura original, mejorando velocidad y experiencia móvil sin depender de WordPress.
           </p>
-          <p class="project-tech">Tecnologías: HTML, CSS, JavaScript, Bootstrap</p>
+<div class="project-tech-icons">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" />
+</div>
           <div class="project-buttons">
             <a href="#" class="btn btn-outline-light" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ver demo</a>
