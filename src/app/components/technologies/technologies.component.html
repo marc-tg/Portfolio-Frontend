@@ -1,133 +1,139 @@
 <style>
-  .technologies-section {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: auto;
-    border-radius: 12px;
-  }
-
-  .technologies-section h3 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .tech-card {
-    background: transparent;
-    border-radius: 12px;
-    padding: 10px;
-    text-align: center;
-    cursor: default;
-    transition: transform 0.3s ease;
-  }
-
-  .tech-card:hover {
-    transform: translateY(-10px);
-  }
-
-  .tech-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    margin-bottom: 15px;
-    transition: width 0.3s ease, height 0.3s ease;
-  }
-
-  .tech-card h5 {
-    font-weight: 700;
-    margin-bottom: 0;
-    color: #fff;
-  }
-
-  /* Reducir tamaño en móvil */
-  @media (max-width: 576px) {
-    .tech-card img {
-      width: 70px;
-      height: 70px;
-      margin-bottom: 10px;
+    .technologies-section h3 {
+        color: #fff;
+        margin-bottom: 40px;
     }
+
     .tech-card {
-      padding: 5px;
+        background: transparent;
+        border-radius: 12px;
+        padding: 10px;
+        text-align: center;
+        cursor: default;
+        transition: transform 0.3s ease;
     }
-  }
+
+    .tech-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .tech-card img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 15px;
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .tech-card h5 {
+        font-weight: 700;
+        margin-bottom: 0;
+        color: #fff;
+    }
+
+    /* Reducir tamaño en móvil */
+    @media (max-width: 576px) {
+        .tech-card img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        .tech-card {
+            padding: 5px;
+        }
+    }
 </style>
 
-<div class="technologies-section">
-  <h3 class="fw-bolder">TECNOLOGÍAS</h3>
-  <div class="row justify-content-center ">
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-        <h5>HTML</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-        <h5>CSS</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-        <h5>JS</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
-        <h5>PHP</h5>
-      </div>
-    </div>
+<div class="container pt-5 mt-md-5 mb-md-5">
+    <div class="row">
+        <div class="col-md-10 mx-md-5 px-md-5 technologies-section">
+            <h3 class="fw-bolder mx-4">TECNOLOGÍAS</h3>
+            <div class="row justify-content-start">
+                <div class="col-6 col-sm-3 col-lg-2  d-flex justify-content-center">
+                    <div class="tech-card ">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5" />
+                        <h5>HTML</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3  col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS3" />
+                        <h5>CSS</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" />
+                        <h5>JS</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                        <h5>PHP</h5>
+                    </div>
+                </div>
 
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
-        <h5>SQL</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-        <h5>Node.js</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-        <h5>Git</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
-        <h5>Bootstrap</h5>
-      </div>
-    </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                            alt="SQL" />
+                        <h5>SQL</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                            alt="Node.js" />
+                        <h5>Node.js</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                        <h5>Git</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                            alt="Bootstrap" />
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
 
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" />
-        <h5>Angular</h5>
-      </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                            alt="Angular" />
+                        <h5>Angular</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" />
+                        <h5>Laravel</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                            alt="Java" />
+                        <h5>Java</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center">
+                    <div class="tech-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                            alt="Tailwind CSS" />
+                        <h5>Tailwind</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel"  />
-        <h5>Laravel</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-        <h5>Java</h5>
-      </div>
-    </div>
-    <div class="col-6 col-md-3 d-flex justify-content-center">
-      <div class="tech-card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS"  />
-        <h5>Tailwind</h5>
-      </div>
-    </div>
-  </div>
 </div>
