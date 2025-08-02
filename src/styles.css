@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #121212;;
+    font-family: 'JetBrains Mono';
+    color: white;
+}
+
+#my-photo  {
+    width: 200px;
+}
