@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: #121212;
-    ;
     font-family: 'JetBrains Mono';
     color: white;
 }
@@ -18,7 +17,8 @@ button, #githubProjects {
 
 model-viewer {
         cursor: url("https://cdn-icons-png.flaticon.com/32/1527/1527728.png"), auto !important;
-
+        border: none;
+        background-color: transparent;
 }
 .no-click {
   pointer-events: none;
@@ -80,7 +80,6 @@ model-viewer {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Quitar margen/padding extra que agrega el visor interno */
