@@ -1,0 +1,40 @@
+<div class="container">
+<div class="row mx-2 mt-3 mt-md-5 px-2 px-md-5 pt-3 pt-md-5">
+        <div class="col-lg-6">
+            <div class="container text-white" style="max-width: 600px; background-color: #121212; padding: 20px; border-radius: 10px; font-family: 'JetBrains Mono', monospace;">
+  <h2 class=" mb-4">CONTACTO</h2>
+  <form>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control bg-dark text-white border-secondary" id="nombre" placeholder="Tu nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control bg-dark text-white border-secondary" id="email" placeholder="tu@ejemplo.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control bg-dark text-white border-secondary" id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+        </div>
+
+    <div class="col-lg-6">
+
+<model-viewer
+  src="../models/desktop_computer/scene.gltf"
+  camera-controls
+  interaction-prompt="none"
+  disable-zoom
+  disable-pan
+  disable-tap
+  camera-orbit="0deg 75deg 2.2m"
+
+>
+</model-viewer>
+    </div>
+    </div>
+</div><!-- Import the component -->

@@ -12,10 +12,14 @@ img {
 }
 
 a,
-button {
+button, #githubProjects {
     cursor: url("https://cdn-icons-png.flaticon.com/32/1527/1527728.png"), auto !important;
 }
 
+model-viewer {
+        cursor: url("https://cdn-icons-png.flaticon.com/32/1527/1527728.png"), auto !important;
+
+}
 .no-click {
   pointer-events: none;
 }
@@ -84,4 +88,6 @@ model-viewer {
 .slot.canvas {
   margin: 0 !important;
   padding: 0 !important;
+      cursor: url('https://cdn-icons-png.flaticon.com/32/11228/11228962.png'), auto !important;
+
 }
