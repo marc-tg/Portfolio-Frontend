@@ -1,5 +1,5 @@
 <div class="container">
-<div class="row mx-2 mt-3 mt-md-5 px-2 px-md-5 pt-3 pt-md-5">
+<div class="row mx-2 mt-3 mt-md-5 px-2 px-md-5 pt-3 pt-md-5 mx-4">
         <div class="col-lg-6">
             <div class="container text-white" style="max-width: 600px; background-color: #121212; padding: 20px; border-radius: 10px; font-family: 'JetBrains Mono', monospace;">
   <h2 class=" mb-4">CONTACTO</h2>
@@ -22,7 +22,7 @@
 
         </div>
 
-    <div class="col-lg-6">
+    <div class="d-none d-lg-block col-lg-6">
 
 <model-viewer
   src="../models/desktop_computer/scene.gltf"
@@ -32,6 +32,22 @@
   disable-pan
   disable-tap
   camera-orbit="0deg 75deg 2.2m"
+
+>
+</model-viewer>
+    </div>
+
+    
+    <div class="d-block d-lg-none col-12">
+
+<model-viewer
+  src="../models/desktop_computer/scene.gltf"
+  camera-controls
+  interaction-prompt="none"
+  disable-zoom
+  disable-pan
+  disable-tap
+  camera-orbit="0deg 75deg 2m"
 
 >
 </model-viewer>
