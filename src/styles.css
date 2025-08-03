@@ -1,11 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: #121212;;
+    background-color: #121212;
+    ;
     font-family: 'JetBrains Mono';
     color: white;
 }
 
-#my-photo  {
+body,
+img {
+    cursor: url('https://cdn-icons-png.flaticon.com/32/11228/11228962.png'), auto !important;
+}
+
+a,
+button {
+    cursor: url("https://cdn-icons-png.flaticon.com/32/1527/1527728.png"), auto !important;
+}
+
+.project-highlight {
+    cursor: url('https://cdn-icons-png.flaticon.com/32/11228/11228962.png'), auto !important;
+}
+
+.project-highlight {
+    animation: float 3s ease-in-out infinite;
+}
+
+#my-photo {
     width: 200px;
 }
 
@@ -13,6 +32,7 @@ ul.timeline {
     list-style-type: none;
     position: relative;
 }
+
 ul.timeline:before {
     content: ' ';
     background: #d4d9df;
@@ -23,11 +43,13 @@ ul.timeline:before {
     height: 100%;
     z-index: 400;
 }
-ul.timeline > li {
+
+ul.timeline>li {
     margin: 20px 0;
     padding-left: 20px;
 }
-ul.timeline > li:before {
+
+ul.timeline>li:before {
     content: ' ';
     background: white;
     display: inline-block;

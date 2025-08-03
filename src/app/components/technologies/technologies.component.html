@@ -31,6 +31,23 @@
         color: #fff;
     }
 
+    .tech-card {
+        animation: slowZoom 4s ease-in-out infinite;
+    }
+
+    @keyframes slowZoom {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.15);
+        }
+    }
+
+
     /* Reducir tamaño en móvil */
     @media (max-width: 576px) {
         .tech-card img {
