@@ -26,6 +26,24 @@
     crossorigin="anonymous"></script>
 
   <app-root></app-root>
-</body>
 
+<!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<model-viewer
+  src="/models/desktop_computer/scene.gltf"
+  camera-controls
+  interaction-prompt="none"
+  disable-zoom
+  disable-pan
+  disable-tap
+  camera-orbit="0deg 75deg 2.2m"
+
+>
+</model-viewer>
+
+
+
+
+</body>
+  
 </html>

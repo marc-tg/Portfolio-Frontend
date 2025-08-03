@@ -16,7 +16,13 @@ button {
     cursor: url("https://cdn-icons-png.flaticon.com/32/1527/1527728.png"), auto !important;
 }
 
-.project-highlight {
+.no-click {
+  pointer-events: none;
+}
+
+
+
+.project-highlight, .tech-card {
     cursor: url('https://cdn-icons-png.flaticon.com/32/11228/11228962.png'), auto !important;
 }
 
@@ -60,4 +66,22 @@ ul.timeline>li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+model-viewer {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  aspect-ratio: 4 / 3;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Quitar margen/padding extra que agrega el visor interno */
+.userInput,
+.slot.canvas {
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -5,10 +5,11 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { AnimationComponent } from './components/animation/animation.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ExperienceComponent, TechnologiesComponent, EducationComponent, ProjectsComponent],
+  imports: [RouterOutlet, HeaderComponent, ExperienceComponent, TechnologiesComponent, EducationComponent, ProjectsComponent, AnimationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
