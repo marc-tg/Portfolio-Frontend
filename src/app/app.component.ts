@@ -5,13 +5,12 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { EducationComponent } from './components/education/education.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { AnimationComponent } from './components/animation/animation.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ExperienceComponent, TechnologiesComponent, EducationComponent, ProjectsComponent, AnimationComponent, ContactFormComponent],
+  imports: [RouterOutlet, HeaderComponent, ExperienceComponent, TechnologiesComponent, EducationComponent, ProjectsComponent, ContactFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],  
