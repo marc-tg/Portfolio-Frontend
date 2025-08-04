@@ -24,25 +24,80 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+<div id="particles-js"></div>
 
   <app-root></app-root>
 
+<!-- particles.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
+<canvas id="space-bg"></canvas>
+<script>
+  const canvas = document.getElementById('space-bg');
+const ctx = canvas.getContext('2d');
+let stars = [];
+const maxStars = 150;
 
+function randomRange(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function Star() {
+  this.x = randomRange(0, window.innerWidth);
+  this.y = randomRange(0, window.innerHeight);
+this.size = randomRange(1.5, 3);
+  this.speed = randomRange(0.05, 0.2);
+  this.opacity = randomRange(0.1, 0.8);
+  this.direction = Math.random() < 0.5 ? 1 : -1;
+}
+
+Star.prototype.update = function () {
+  this.x += this.speed * this.direction;
+  if (this.x < 0) this.x = window.innerWidth;
+  if (this.x > window.innerWidth) this.x = 0;
+};
+
+Star.prototype.draw = function () {
+  ctx.beginPath();
+  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+  ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+  ctx.shadowColor = 'rgba(255, 255, 255, 0.7)';
+  ctx.shadowBlur = 4;
+  ctx.fill();
+};
+
+function initStars() {
+  stars = [];
+  for (let i = 0; i < maxStars; i++) {
+    stars.push(new Star());
+  }
+}
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  initStars();
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  stars.forEach(star => {
+    star.update();
+    star.draw();
+  });
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener('resize', resize);
+
+resize();
+animate();
+
+</script>
 
 
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-<!-- <model-viewer
-  src="/models/desktop_computer/scene.gltf"
-  camera-controls
-  interaction-prompt="none"
-  disable-zoom
-  disable-pan
-  disable-tap
-  camera-orbit="0deg 75deg 2.2m"
 
->
-</model-viewer> -->
 
 </body>
   
