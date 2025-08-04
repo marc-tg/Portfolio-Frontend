@@ -7,7 +7,7 @@
   z-index: -1;
 }
 body {
-  background: radial-gradient(ellipse at center, #001022 0%, #000814 80%, #000000 100%);
+  background: radial-gradient(ellipse at center, #001022 0%, #04070c 80%, #000000 100%);
   font-family: 'JetBrains Mono', monospace;
   color: white;
   margin: 0;
