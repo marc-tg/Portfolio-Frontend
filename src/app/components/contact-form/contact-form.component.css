@@ -5,6 +5,7 @@ form {
   background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+
 }
 
 label {
@@ -16,6 +17,8 @@ label {
   letter-spacing: 1.2px;
   font-size: 0.85rem;
   user-select: none;
+      cursor: url('https://cdn-icons-png.flaticon.com/32/11228/11228962.png'), auto !important;
+
 }
 
 input, textarea {
@@ -32,6 +35,7 @@ input, textarea {
     0 0 6px #0d6efd33;
   transition: all 0.3s ease;
   outline-offset: 3px;
+
 }
 
 input::placeholder,
