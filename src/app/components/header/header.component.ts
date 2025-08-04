@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  email : string = "marctg.contacto@gmail.com"
 }
